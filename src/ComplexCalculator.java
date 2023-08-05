@@ -10,9 +10,9 @@ public class ComplexCalculator {
     }
 
     public Complex calculate(Complex number1, Complex number2) {
-        logger.info("Calculating...");
+        logger.info("Вычисление...");
         Complex result = operation.perform(number1, number2);
-        logger.info("Result is: " + result.getReal() + " + " + result.getImaginary() + "i");
+        logger.info("Результат: " + result.getReal() + " + " + result.getImaginary() + "i");
         return result;
     }
 

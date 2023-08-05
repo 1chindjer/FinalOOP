@@ -22,9 +22,17 @@ public class Main {
         // Выполняем операцию деления
         Complex resultDivision = calculator.calculate(number1, number2);
 
+        // Меняем операцию на вычитание
+        calculator.setOperation(new ComplexSubtraction());
+
+        // Выполняем операцию вычитания
+        Complex resultSubtraction = calculator.calculate(number1, number2);
+
         // Выводим результаты
-        System.out.println("Result of addition: " + resultAddition.getReal() + " + " + resultAddition.getImaginary() + "i");
-        System.out.println("Result of multiplication: " + resultMultiplication.getReal() + " + " + resultMultiplication.getImaginary() + "i");
-        System.out.println("Result of division: " + resultDivision.getReal() + " + " + resultDivision.getImaginary() + "i");
+        System.out.println("Результат сложения: " + resultAddition.getReal() + " + " + resultAddition.getImaginary() + "i");
+        System.out.println("Результат умножения: " + resultMultiplication.getReal() + " + " + resultMultiplication.getImaginary() + "i");
+        System.out.println("Результат деления: " + resultDivision.getReal() + " + " + resultDivision.getImaginary() + "i");
+        System.out.println("Результат вычитания: " + resultSubtraction.getReal() + " + " + resultSubtraction.getImaginary() + "i");
+
     }
 }
